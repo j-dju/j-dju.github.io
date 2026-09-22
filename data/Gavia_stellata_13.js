@@ -1,0 +1,1 @@
+var json_Gavia_stellata_13 = {"type":"FeatureCollection","name":"Gavia_stellata_13","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[]}
