@@ -3895,22 +3895,7 @@
         document.getElementById("all").appendChild(col1);
         document.getElementById("all").appendChild(col2);
         col1.appendChild(mapDiv)
-            var div_ObjektID = document.createElement("div");
-            div_ObjektID.id = "div_ObjektID";
-            div_ObjektID.className = "slider";
-            document.getElementById("menu").appendChild(div_ObjektID);
-            var lab_ObjektID = document.createElement('div');
-            lab_ObjektID.innerHTML  = 'ObjektID: <span id="val_ObjektID"></span>';
-            lab_ObjektID.className = 'filterlabel';
-            document.getElementById("menu").appendChild(lab_ObjektID);
-            var reset_ObjektID = document.createElement('div');
-            reset_ObjektID.innerHTML = 'test filter';
-            reset_ObjektID.className = 'filterlabel';
-            lab_ObjektID.className = 'filterlabel';
-            reset_ObjektID.onclick = function() {
-                sel_ObjektID.noUiSlider.reset();
-            };
-            document.getElementById("menu").appendChild(reset_ObjektID);
+			document.getElementById("menu").appendChild(reset_ObjektID);
             var sel_ObjektID = document.getElementById('div_ObjektID');
             noUiSlider.create(sel_ObjektID, {
                 connect: true,
