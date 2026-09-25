@@ -3040,6 +3040,19 @@
         });
         lay.addTo(map);
         setBounds();
+		function useClickPopups(l) {
+            if (l instanceof L.LayerGroup) {
+                l.eachLayer(useClickPopups); // recurse into geoJson layer groups
+            } else if (l.getPopup && l.getPopup()) {
+                l.off('mouseover');
+                l.off('mouseout');
+                l.on('click', function(e) {
+                    highlightLayer = e.target;
+                    l.openPopup(e.latlng);
+                });
+            }
+        }
+        map.eachLayer(useClickPopups);
         </script>
     </body>
 </html>
