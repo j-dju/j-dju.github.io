@@ -3053,6 +3053,9 @@
             }
         }
         map.eachLayer(useClickPopups);
+		map.on('layeradd', function(e) {
+    		useClickPopups(e.layer);
+		});
         </script>
     </body>
 </html>
