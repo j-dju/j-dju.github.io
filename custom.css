@@ -1,19 +1,23 @@
+/* Scales the whole interface: 14px on phones, 18px on desktop */
 html {
   font-size: clamp(14px, 0.256vw + 13.08px, 18px);
 }
-.leaflet-control-layers,
-.leaflet-control-title {
-  font-size: 1rem;      /* 14px phone → 18px desktop */
+
+/* Layer list */
+.leaflet-control-layers {
+  font-size: 1rem;
   padding: 0.5rem;
-  max-width: 18rem;     /* 252px → 324px */
+  max-width: 18rem;
 }
 
+/* Zoom buttons */
 .leaflet-bar a {
-  width: 2.75rem;       /* 38.5px → 49.5px */
+  width: 2.75rem;
   height: 2.75rem;
   line-height: 2.75rem;
 }
 
+/* Popups: never wider than the screen */
 .leaflet-popup-content {
   max-width: min(22rem, 80vw) !important;
 }
