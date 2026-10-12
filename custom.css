@@ -1,0 +1,19 @@
+html {
+  font-size: clamp(14px, 0.256vw + 13.08px, 18px);
+}
+.leaflet-control-layers,
+.leaflet-control-title {
+  font-size: 1rem;      /* 14px phone → 18px desktop */
+  padding: 0.5rem;
+  max-width: 18rem;     /* 252px → 324px */
+}
+
+.leaflet-bar a {
+  width: 2.75rem;       /* 38.5px → 49.5px */
+  height: 2.75rem;
+  line-height: 2.75rem;
+}
+
+.leaflet-popup-content {
+  max-width: min(22rem, 80vw) !important;
+}
